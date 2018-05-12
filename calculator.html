@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Calculator</title>
+
+	<!-- jQuery cdn -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	
+	<!-- Bootstrap v4 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+	<!-- Jumbrotron -->
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="container text-center text-info">
+	    <h1 class="display-2">Calculator</h1>
+	    <p class="lead">Built with jQuery and Bootstrap.</p>
+	  </div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+			<!-- Calculator -->
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-header mb-4">Calculator</h5>
+						<div class="card">
+						  <div class="card-body">
+<!-- 						    THIS IS WHERE THE INPUT NUMBERS GO -->
+						  </div>
+						</div>
+
+						<!-- Calculator panel -->
+						<div class="mt-4">
+							<button id="button-1" class="btn btn-primary number" value="1"><h1>1</h1></button>
+							<button id="button-2" class="btn btn-primary number" value="2"><h1>2</h1></button>
+							<button id="button-3" class="btn btn-primary number" value="3"><h1>3</h1></button>
+							<button id="button-plus" class="btn btn-danger operator" value="plus"><h1>+</h1></button>
+							<br><br>
+							<button id="button-4" class="btn btn-primary number" value="4"><h1>4</h1></button>
+							<button id="button-5" class="btn btn-primary number" value="5"><h1>5</h1></button>
+							<button id="button-6" class="btn btn-primary number" value="6"><h1>6</h1></button>
+							<button id="button-minus" class="btn btn-danger operator" value="minus"><h1>&minus;</h1></button>
+							<br><br>
+							<button id="button-7" class="btn btn-primary number" value="7"><h1>7</h1></button>
+							<button id="button-8" class="btn btn-primary number" value="8"><h1>8</h1></button>
+							<button id="button-9" class="btn btn-primary number" value="9"><h1>9</h1></button>
+							<button id="button-multiply" class="btn btn-danger operator" value="times"><h1>&times;</h1></button>
+							<br><br>
+							<button id="button-0" class="btn btn-primary number" value="0"><h1>0</h1></button>
+							<button id="button-divide" class="btn btn-danger operator" value="divide"><h1>&divide;</h1></button>
+							<button id="button-power" class="btn btn-danger operator" value="power"><h1>^</h1></button>
+							<button id="button-equal" class="btn btn-success equal" value="equals"><h1>=</h1></button>
+							<br><br>
+							<button id="button-clear" class="btn btn-light clear" value="clear"><h1>clear</h1></button>
+						</div>						
+					</div>	
+				</div>			
+			</div>
+
+			<!-- Results panel -->
+			<div class="col-md-6">
+				<div class="card">
+					<h5 class="card-header">Result</h5>
+					<div class="card-body">
+			            <h1 id="first-number"></h1>
+			            <h1 id="operator"></h1>
+			            <h1 id="second-number"></h1>
+			            <hr>
+			            <h1 id="result"></h1>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script type="javascript" src="./calculator.js"></script>
+</body>
+</html>
