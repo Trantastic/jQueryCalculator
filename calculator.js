@@ -30,36 +30,52 @@ $(document).ready(() => {
 		}
 	});
 
+	// Clears values when clear btn is pressed
+	$(".clear").on("click", clear);
+
+	// Does caluculation when = is pressed
+	$(".equal").on("click", runCalcu);
+
 	function runCalcu() {
 		switch(operator) {
 			case "plus":
-				result = firstNum + secondNum;
+				result = parseInt(firstNum) + parseInt(secondNum);
+				$("#result").html(result);
+				calculated = true;
 				break;
 			case "minus":
-				result = firstNum - secondNum;
+				result = parseInt(firstNum) - parseInt(secondNum);
+				$("#result").html(result);
+				calculated = true;
 				break;
 			case "divide":
-				result = firstNum / secondNum;
+				result = parseInt(firstNum) / parseInt(secondNum);
+				$("#result").html(result);
+				calculated = true;
 				break;
 			case "times":
-				result = firstNum * secondNum;
+				result = parseInt(firstNum) * parseInt(secondNum);
+				$("#result").html(result);
+				calculated = true;
 				break;
 			case "power":
 				result = Math.pow(parseInt(firstNum), parseInt(secondNum));
+				$("#result").html(result);
+				calculated = true;
 				break;
 		}
 	}
 
 	function clear() {
-		var firstNum = "";
-		var secondNum = "";
-		var operator = "";
-		var result;
-		var isOpChosen;
-		var calculated;
+		firstNum = "";
+		secondNum = "";
+		operator = "";
+		result;
+		isOpChosen = false;
+		calculated = false;
 
 		$("#first-number").empty();
-		$("#second-number-number").empty();
+		$("#second-number").empty();
 		$("#operator").empty();
 		$("#result").empty();
 	}
