@@ -12,7 +12,7 @@
 <body>
 	<!-- Jumbrotron -->
 	<div class="jumbotron jumbotron-fluid">
-	  <div class="container text-center text-info">
+	  <div class="container text-center text-dark">
 	    <h1 class="display-2">Calculator</h1>
 	    <p class="lead">Built with jQuery and Bootstrap.</p>
 	  </div>
@@ -28,9 +28,11 @@
 						<h5 class="card-header mb-4">Calculator</h5>
 						<div class="card">
 						  <div class="card-body">
-							<h1 id="first-number"></h1>
-							<h1 id="operator"></h1>
-							<h1 id="second-number"></h1>
+						  	<h1>
+								<span id="first-number"></span>
+								<span id="operator"></span>
+								<span id="second-number"></span>
+							</h1>
 						  </div>
 						</div>
 
@@ -56,7 +58,7 @@
 							<button id="button-power" class="btn btn-danger operator" value="power"><h1>^</h1></button>
 							<button id="button-equal" class="btn btn-success equal" value="equals"><h1>=</h1></button>
 							<br><br>
-							<button id="button-clear" class="btn btn-light clear" value="clear"><h1>clear</h1></button>
+							<button id="button-clear" class="btn btn-dark clear" value="clear"><h1>clear</h1></button>
 						</div>						
 					</div>	
 				</div>			
